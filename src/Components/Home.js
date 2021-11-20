@@ -1,63 +1,70 @@
-import React from 'react'
-import '../Home.css'
-import Product from './Product'
-
+import React from "react";
+import "../Home.css";
+import Product from "./Product";
 
 function Home() {
-    return (
-        <div className='home'>
-            <div className='home__container'>
-                <img className='home__image' src='https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220.jpg' alt='ww' />
-                <div className='home__row'>
-                    <Product 
-                    id='12321341'
-                    title='The Lean Startup. How Constant Innovation Creates Radically Successful Business Paperback' 
-                    price={19.99}
-                    image='https://m.media-amazon.com/images/I/81SrwYY-6-L._AC_UY218_.jpg' ratings={4} />
+  return (
+    <div className="home">
+      <div className="home__container">
+        <img
+          className="home__image"
+          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          alt=""
+        />
 
-                    <Product 
-                    id='49538094' 
-                    title='Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Liter Glass bowl' 
-                    price={100.99}
-                    image='https://m.media-amazon.com/images/I/61FJtVQh9bL._AC_SX679_.jpg' ratings={5} />
-                </div>
-
-                <div className='home__row'>
-                    <Product 
-                    id='4903850' 
-                    title='Samsung curve monitor with 32 inch disolay' 
-                    price={1000.99}
-                    image='https://m.media-amazon.com/images/I/61Hh-0F7AbL._AC_UY218_.jpg' ratings={4} />
-
-                    <Product 
-                    id='23445930' 
-                    title='Apple ipad with stunning looks with stands' 
-                    price={49.99}
-                    image='https://m.media-amazon.com/images/I/51EVETDOOeL._AC_UY218_.jpg' ratings={5} />
-
-                    <Product 
-                    id='3254354345' 
-                    title='Apple M1  11-inch Liquid Retina display ' 
-                    price={100.99}
-                    image='https://m.media-amazon.com/images/I/81Y5WuARqpS._AC_UY218_.jpg' ratings={3} />
-                </div>\
-
-                <div className='home__row'>
-                    <Product 
-                    id='00829332' 
-                    title='1800R curvature of the screen provides a truly immersive viewing experience A stylish design featuring a Black body metallic finish and sleek curves' 
-                    price={999.99}
-                    image='https://m.media-amazon.com/images/I/71rXSVqET9L._AC_UL320_.jpg' ratings={5} />
-
-                    {/* <Product 
-                    id='3254354345' 
-                    title=' Roll over image to zoom in Seagate Portable 2TB External Hard Drive Portable HDD – USB 3.0 for PC, Mac, PS4, & Xbox - 1-Year Rescue Service (STGX2000400)' 
-                    price={100.99}
-                    image='https://m.media-amazon.com/images/I/81tjLksKixL._AC_UL320_.jpg' ratings={3} /> */}
-                </div>
-            </div>
+        <div className="home__row">
+          <Product
+            id="12321341"
+            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
+            price={11.96}
+            rating={5}
+            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+          />
+          <Product
+            id="49538094"
+            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
+            price={239.0}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
+          />
         </div>
-    )
+
+        <div className="home__row">
+          <Product
+            id="4903850"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
+            price={199.99}
+            rating={3}
+            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+          />
+          <Product
+            id="23445930"
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
+            price={98.99}
+            rating={5}
+            image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+          />
+          <Product
+            id="3254354345"
+            title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
+            price={598.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+          />
+        </div>
+
+        <div className="home__row">
+          <Product
+            id="90829332"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
+            price={1094.98}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
